@@ -4,6 +4,8 @@ from errors import handleErr
 
 global mailgunConfig
 
+# moin meister
+
 def send_mail(recipientList, subject, content):
     # to has to be array
     try:
