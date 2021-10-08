@@ -21,6 +21,7 @@ defaultConfig = {
   "jwt": {
       "privateKey": "",
   },
+  "isTesting": True,
 }
 config = read_config(defaultConfig, "../config.json")
 

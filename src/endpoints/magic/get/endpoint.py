@@ -10,10 +10,10 @@ def init(db, api, secret):
     class GetMagicLink(Resource):
         def get(self, userId, magicId):
 
-            data, err = handler.tokenIfMagic(userId, magicId)
+            possiblyJwt, err = handler.tokenIfMagic(userId, magicId)
 
             if err:
                 return { "ok": 0, "err": err.msg }, err.status
-            return { "ok": 1 }, 200, { "set-cookie": data }
+            return { "ok": 1 }, 200, { "set-cookie": possiblyJwt }
 
     api.add_resource(GetMagicLink, "/magic/<string:userId>/<string:magicId>")
