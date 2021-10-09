@@ -2,12 +2,9 @@ import requests
 
 from errors import handleErr
 
-global mailgunConfig
-
-# moin meister
+#global mailgunConfig
 
 def send_mail(recipientList, subject, content):
-    # to has to be array
     try:
         data = requests.post(
             f"https://api.mailgun.net/v3/{ mailgunConfig['hostname'] }/messages",
