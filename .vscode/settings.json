@@ -3,7 +3,7 @@
   "python.autoComplete.extraPaths": [".env/bin/python3"],
   "python.analysis.extraPaths": [".env/bin/python3"],
   "terminal.integrated.env.osx": {
-    "PYTHONPATH": "./fooooosball"
+    "PYTHONPATH": "../fooooosball"
   },
   "python.pythonPath": ".env/bin/python3",
   "python.envFile": ".env",
